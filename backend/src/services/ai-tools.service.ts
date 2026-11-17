@@ -574,7 +574,7 @@ export function buildBoardTools(roomId: string) {
         title: z.string().describe("What it is, e.g. 'House'. Used as the frame title."),
         strokes: z.array(
           z.object({
-            points: z.array(z.tuple([z.number(), z.number()])).min(2).max(200),
+            points: z.array(z.array(z.number())).min(2).max(200).describe("List of [x, y] points"),
             color: colorSchema.optional(),
             thickness: z.enum(["thin", "medium", "thick"]).optional(),
           }),

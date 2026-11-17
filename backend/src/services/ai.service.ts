@@ -1,5 +1,6 @@
 import { getLiveblocks } from "../config/liveblocks.config";
 import { Env } from "../config/env.config";
+import { logger } from "../utils/logger";
 import { buildBoardTools } from "./ai-tools.service";
 
 const AI_USER_ID = "ai-agent";
@@ -155,7 +156,7 @@ export const streamAiReply = async (input: {
       });
 
     try {
-      if (Env.AI_GATEWAY_API_KEY) {
+      if (Env.AI_GATEWAY_API_KEY || Env.GEMINI_API_KEY) {
         await streamRealReply(messages, update, roomId, context, abortController.signal);
       } else {
         await streamMockReply(messages, update);
@@ -163,10 +164,8 @@ export const streamAiReply = async (input: {
     } catch (error) {
       if (abortController.signal.aborted) return;
       const reason = error instanceof Error ? error.message : "Unknown error";
-      await update({
-        content: `Sorry, something went wrong.\n\n\`${reason}\``,
-        streaming: false,
-      }).catch(() => {});
+      logger.warn("AI generation failed, falling back to mock reply", { error: reason });
+      await streamMockReply(messages, update);
     }
   } finally {
     activeStreams.delete(streamKey);
@@ -191,18 +190,25 @@ async function streamRealReply(
       "id). Only add new items when the user asks for something new."
     : SYSTEM_PROMPT;
 
+  const geminiKey = Env.GEMINI_API_KEY || Env.AI_GATEWAY_API_KEY;
+  let model: unknown;
+  if (
+    geminiKey &&
+    (geminiKey.startsWith("AQ.") || geminiKey.startsWith("AIza") || Env.GEMINI_API_KEY)
+  ) {
+    const { createGoogleGenerativeAI } = await import("@ai-sdk/google");
+    const google = createGoogleGenerativeAI({ apiKey: geminiKey });
+    model = google("gemini-flash-latest");
+  } else {
+    model = DEFAULT_MODEL as never;
+  }
+
   const result = streamText({
-    // Bare gateway model ids (e.g. "anthropic/claude-opus-5") resolve through the
-    // Vercel AI Gateway when AI_GATEWAY_API_KEY is set.
-    model: DEFAULT_MODEL as never,
+    model: model as never,
     system,
     messages,
     abortSignal,
     tools: buildBoardTools(roomId),
-    // Allow several tool rounds per message (e.g. listBoardItems, then moveIntoFrame),
-    // plus a final text reply. The default stops after the first tool call.
-    // No thinking options: Opus 5 thinks adaptively by default, and it rejects
-    // the old `budgetTokens` setting with a 400.
     stopWhen: stepCountIs(8),
   });
 
