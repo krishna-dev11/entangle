@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌟 Advanced MERN B2B Realtime Collaboration Platform - Kano
 
 > This code, whether in parts or whole, is licensed for commercial use **only with a license**. It is **free for personal use**.
@@ -67,3 +68,6 @@ For more details about license, please refer to the [TECHWITHEMMA-LICENSE.md](./
 If you find this helpful, support by subscribing and sharing:
 
 🔗 [https://tinyurl.com/subcribe-to-techwithEmma](https://tinyurl.com/subcribe-to-techwithEmma)
+=======
+# entangle
+>>>>>>> f292c0ab54005a8528cb85626968fffa0b4d9a5f
