@@ -174,7 +174,7 @@ export default function CreateWorkspacePage() {
                   }
                 />
                 <InputGroupAddon align="inline-end">
-                  <InputGroupText>.kano.so</InputGroupText>
+                  <InputGroupText>.entangular.so</InputGroupText>
                   {slugState === 'checking' ? (
                     <LoaderIcon className="animate-spin" />
                   ) : slugState === 'available' ? (
@@ -193,9 +193,9 @@ export default function CreateWorkspacePage() {
                 {slugState === 'checking'
                   ? 'Checking availability…'
                   : slugState === 'available'
-                    ? `${effectiveSlug}.kano.so is available.`
+                    ? `${effectiveSlug}.entangular.so is available.`
                     : slugState === 'taken'
-                      ? `${effectiveSlug}.kano.so is already taken. Try another.`
+                      ? `${effectiveSlug}.entangular.so is already taken. Try another.`
                       : 'This will be your workspace link.'}
               </FieldDescription>
             </Field>

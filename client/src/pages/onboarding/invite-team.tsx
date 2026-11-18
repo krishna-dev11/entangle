@@ -113,7 +113,7 @@ export default function InviteTeamPage() {
             Bring your team with you
           </h1>
           <p className="text-muted-foreground">
-            Invite your teammates to collaborate on Kano. You can always invite more
+            Invite your teammates to collaborate on Entangular. You can always invite more
             people later.
           </p>
         </div>

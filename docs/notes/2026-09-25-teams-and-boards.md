@@ -214,7 +214,7 @@ Liveblocks (see webhooks below). One board = one room, `Board.roomId` links them
 
 ### Mapping our tenancy onto Liveblocks
 
-| Kano | Liveblocks |
+| Entangular | Liveblocks |
 | --- | --- |
 | Workspace | `organizationId` = `workspaceId` |
 | Team | group, `groupIds` = the user's team IDs |
@@ -408,7 +408,7 @@ use case. None of them state which plans include Feeds.
 - Pricing says "All plans include: Sync, Comments, and Notifications", and Feeds is documented
   under Sync (`/docs/products/sync/feeds`). The example needs only a Liveblocks API key.
   So Feeds is **probably** on Free. This is an inference, not confirmed.
-- Free limits that affect Kano: 10 simultaneous connections per room, 10 MB storage per room,
+- Free limits that affect Entangular: 10 simultaneous connections per room, 10 MB storage per room,
   512 MB file storage, 200 comments, **24 hours of version history** (Restore and "Undo AI
   change" only reach back 24 hours on Free).
 - To confirm: create one feed message from the backend once Liveblocks is installed. The API

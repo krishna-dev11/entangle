@@ -27,7 +27,7 @@ export function BoardHeader({ title, workspaceId, onFocusThread }: BoardHeaderPr
           className="flex items-center gap-2 rounded-md px-1.5 py-0.5 hover:bg-muted"
         >
           <LogoMark className="size-6" />
-          <span className="text-lg font-bold tracking-tight">kano</span>
+          <span className="text-lg font-bold tracking-tight">entangular</span>
         </Link>
 
         <button

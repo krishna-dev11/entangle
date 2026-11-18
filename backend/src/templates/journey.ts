@@ -39,7 +39,7 @@ export const journeyTemplate: BoardTemplateContent = {
     stage("j-s3", "Onboard", COLORS.purple, 760),
 
     // Notes centred under each stage.
-    note("j-d1", "Finds Kano on YouTube", COLORS.noteYellow, 75, 150, FRAME),
+    note("j-d1", "Finds Entangular on YouTube", COLORS.noteYellow, 75, 150, FRAME),
     note("j-d2", "Watches a demo", COLORS.noteYellow, 75, 330, FRAME),
     note("j-d3", "Creates an account", COLORS.noteBlue, 425, 150, FRAME),
     note("j-d4", "Sets up a workspace", COLORS.noteBlue, 425, 330, FRAME),

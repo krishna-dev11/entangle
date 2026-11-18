@@ -71,7 +71,7 @@ const FEATURES: Feature[] = [
 const TESTIMONIALS = [
   {
     quote:
-      'Kano replaced three tools for us. Our product and design teams finally plan in the same place.',
+      'Entangular replaced three tools for us. Our product and design teams finally plan in the same place.',
     name: 'Sarah Chen',
     role: 'Head of Product, Lumen',
   },
@@ -91,12 +91,12 @@ const TESTIMONIALS = [
 
 const FAQS = [
   {
-    q: 'What is Kano?',
-    a: 'Kano is a realtime whiteboard where teams brainstorm, map flows and plan roadmaps together, with an AI agent that builds alongside you.',
+    q: 'What is Entangular?',
+    a: 'Entangular is a realtime whiteboard where teams brainstorm, map flows and plan roadmaps together, with an AI agent that builds alongside you.',
   },
   {
     q: 'Do I need to install anything?',
-    a: 'No. Kano runs in your browser. Create a workspace and you are on a board in seconds.',
+    a: 'No. Entangular runs in your browser. Create a workspace and you are on a board in seconds.',
   },
   {
     q: 'How does the AI agent work?',
@@ -197,7 +197,7 @@ export default function LandingPage() {
   return (
     <div className="bg-canvas">
       <header className="mx-auto flex w-full max-w-6xl items-center justify-between gap-6 px-4 py-5 sm:px-6">
-        <Link to="/" aria-label="Kano home" className="shrink-0">
+        <Link to="/" aria-label="Entangular home" className="shrink-0">
           <Logo />
         </Link>
 
@@ -242,7 +242,7 @@ export default function LandingPage() {
           </h1>
 
           <p className="mt-6 max-w-md text-base text-muted-foreground sm:text-lg">
-            Kano is a realtime canvas where your team brainstorms, maps flows and plans roadmaps,
+            Entangular is a realtime canvas where your team brainstorms, maps flows and plans roadmaps,
             with an{' '}
             <span className="rounded-md bg-primary/25 px-1.5 py-0.5 font-medium text-foreground underline decoration-primary decoration-2 underline-offset-2">
               AI agent&nbsp;→
@@ -274,7 +274,7 @@ export default function LandingPage() {
         <Reveal>
           <BrowserFrame
             src={boardScreenshot}
-            alt="Kano board showing sticky notes, a flowchart, a roadmap and the AI agent panel"
+            alt="Entangular board showing sticky notes, a flowchart, a roadmap and the AI agent panel"
             className="shadow-2xl shadow-foreground/[0.08]"
           />
         </Reveal>
@@ -330,7 +330,7 @@ export default function LandingPage() {
         <Reveal>
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-              Teams ship faster with Kano
+              Teams ship faster with Entangular
             </h2>
             <p className="mt-4 text-muted-foreground">
               From first idea to a shared plan, without the tool switching.
@@ -424,7 +424,7 @@ export default function LandingPage() {
       <footer className="border-t">
         <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-4 px-4 py-8 text-sm text-muted-foreground sm:flex-row sm:px-6">
           <Logo showWordmark={false} markClassName="size-6" />
-          <p>© {new Date().getFullYear()} Kano. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Entangular. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#features" className="transition-colors hover:text-foreground">
               Features

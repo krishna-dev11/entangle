@@ -109,7 +109,7 @@ const GOALS = "l-goals";
 export const launchTemplate: BoardTemplateContent = {
   nodes: [
     // Header.
-    shape("l-title", "rectangle", "Kano launch plan\nOne board for the team and the AI agent", COLORS.yellow, 0, -170, 520, 110),
+    shape("l-title", "rectangle", "Entangular launch plan\nOne board for the team and the AI agent", COLORS.yellow, 0, -170, 520, 110),
     text("l-kickoff", "Kickoff: Monday 10:00\nOwner: Product team · Status: In progress", 560, -150, 420, 70),
 
     // Frames first (children must come after their frame).
@@ -129,7 +129,7 @@ export const launchTemplate: BoardTemplateContent = {
     text("l-best", "Top pick!", 360, 20, 110, 32, BRAIN),
 
     // User flow: every basic shape, joined with labelled connectors.
-    shape("l-start", "oval", "Visit kano.app", COLORS.blue, 40, 200, 160, 90, FLOW),
+    shape("l-start", "oval", "Visit entangular.app", COLORS.blue, 40, 200, 160, 90, FLOW),
     shape("l-signup", "rectangle", "Sign up", COLORS.blue, 260, 205, 160, 80, FLOW),
     shape("l-invited", "rhombus", "Invited?", COLORS.yellow, 490, 185, 120, 120, FLOW),
     shape("l-join", "rectangle", "Join the team", COLORS.purple, 690, 70, 170, 80, FLOW),

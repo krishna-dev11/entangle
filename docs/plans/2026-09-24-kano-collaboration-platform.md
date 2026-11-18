@@ -1,4 +1,4 @@
-# Kano — B2B Realtime Collaboration Platform
+# Entangular — B2B Realtime Collaboration Platform
 
 **Date:** 2026-09-24
 **Status:** Approved for implementation (amended 2026-09-25)
@@ -238,7 +238,7 @@ Designs: `_designs/auth-register-screen.png`, `auth-create-workspace-screen.png`
 - [ ] Split layout — yellow panel with rotating headline/illustration on the left, form right.
 - [ ] Register and login: Google button, divider, `FieldGroup` form, password reveal toggle.
 - [ ] 3-step wizard with a shared stepper (numbered → checkmark on completion):
-  1. Workspace name, slug with live availability check and `.kano.so` suffix, icon picker
+  1. Workspace name, slug with live availability check and `.entangular.so` suffix, icon picker
      (upload or colored initials)
   2. Repeatable invite rows with per-row role selects, "Add another person", default-role
      select, "Skip for now"
@@ -383,7 +383,7 @@ build it as a custom `path` node sized to its stroke bounds.
 
 ## 5. Assumptions to validate
 
-- Workspace slug is stored and validated but **not** a real subdomain; `.kano.so` is display
+- Workspace slug is stored and validated but **not** a real subdomain; `.entangular.so` is display
   only in v1.
 - Google OAuth links to an existing account when the verified email matches; no separate
   account-linking UI.

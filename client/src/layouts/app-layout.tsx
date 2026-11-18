@@ -72,7 +72,7 @@ function AppShell({ workspaceId }: { workspaceId: string | undefined }) {
         <SidebarHeader className="gap-3 px-3 pt-2 pb-1">
           <Link to={base} className="flex items-center gap-2 px-1">
             <LogoMark className="size-7" />
-            <span className="text-xl font-bold tracking-tight">kano</span>
+            <span className="text-xl font-bold tracking-tight">entangular</span>
           </Link>
 
           <WorkspaceSwitcher workspaceId={workspaceId} />

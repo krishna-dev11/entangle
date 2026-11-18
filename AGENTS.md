@@ -1,4 +1,4 @@
-# Kano
+# Entangular
 
 A B2B realtime collaboration platform — a Miro-style canvas where teams and an AI agent
 work on the same board simultaneously.

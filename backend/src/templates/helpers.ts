@@ -28,7 +28,7 @@ export const introCards = (id: string, title: string, tips: string): TemplateNod
     id: `${id}-title`,
     type: "shape",
     position: { x: 0, y: 0 },
-    data: { label: `${title}\nCreate a ${title.toLowerCase()} with Kano`, shape: "rectangle", color: COLORS.yellow },
+    data: { label: `${title}\nCreate a ${title.toLowerCase()} with Entangular`, shape: "rectangle", color: COLORS.yellow },
     width: 300,
     height: 120,
   },

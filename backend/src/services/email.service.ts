@@ -29,15 +29,15 @@ export const sendInvitationEmail = async (input: {
     {
       from: Env.RESEND_FROM_EMAIL,
       to: input.to,
-      subject: `${input.inviterName} invited you to ${input.workspaceName} on Kano`,
-      text: `${input.inviterName} invited you to collaborate in ${input.workspaceName} on Kano.
+      subject: `${input.inviterName} invited you to ${input.workspaceName} on Entangular`,
+      text: `${input.inviterName} invited you to collaborate in ${input.workspaceName} on Entangular.
 
 Accept the invitation: ${inviteUrl}
 
 This invitation expires in 7 days.`,
       html: `
       <div style="font-family:Inter,Arial,sans-serif;max-width:480px;margin:0 auto;padding:24px;color:#18181b">
-        <h1 style="font-size:20px;margin:0 0 12px">Join ${workspaceName} on Kano</h1>
+        <h1 style="font-size:20px;margin:0 0 12px">Join ${workspaceName} on Entangular</h1>
         <p style="font-size:14px;line-height:1.6;margin:0 0 20px">
           ${inviterName} invited you to collaborate in <strong>${workspaceName}</strong>.
         </p>

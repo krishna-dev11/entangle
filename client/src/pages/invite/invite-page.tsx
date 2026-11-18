@@ -87,8 +87,8 @@ export default function InvitePage() {
               </h1>
               <p className="text-sm text-muted-foreground">
                 {invitation.teamName
-                  ? `You'll join ${invitation.teamName} on Kano.`
-                  : 'Sign in to collaborate on Kano.'}
+                  ? `You'll join ${invitation.teamName} on Entangular.`
+                  : 'Sign in to collaborate on Entangular.'}
               </p>
             </div>
             <div className="flex flex-col gap-2">

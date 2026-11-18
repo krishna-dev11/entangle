@@ -47,7 +47,7 @@ export const flowchartTemplate: BoardTemplateContent = {
       id: "f-title",
       type: "shape",
       position: { x: 0, y: 0 },
-      data: { label: "Flowchart\nCreate a flowchart with Kano", shape: "rectangle", color: YELLOW },
+      data: { label: "Flowchart\nCreate a flowchart with Entangular", shape: "rectangle", color: YELLOW },
       width: 300,
       height: 120,
     },

@@ -61,7 +61,7 @@ export default function SignInPage() {
       description="Pick up where your team left off and keep the ideas moving."
       headerAction={
         <div className="flex items-center gap-3">
-          <span className="text-sm text-muted-foreground">New to Kano?</span>
+          <span className="text-sm text-muted-foreground">New to Entangular?</span>
           <Button variant="outline" size="sm" asChild>
             <Link to="/sign-up">Create account</Link>
           </Button>

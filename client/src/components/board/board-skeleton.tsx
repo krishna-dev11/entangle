@@ -12,7 +12,7 @@ export function BoardSkeleton() {
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-2 px-1.5 opacity-40">
             <LogoMark className="size-6 grayscale" />
-            <span className="text-lg font-bold tracking-tight">kano</span>
+            <span className="text-lg font-bold tracking-tight">entangular</span>
           </div>
           <Skeleton className="h-6 w-36" />
           <Skeleton className="size-5 rounded-sm" />

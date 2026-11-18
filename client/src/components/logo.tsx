@@ -9,7 +9,7 @@ export function LogoMark({ className, tone = 'default', ...props }: LogoMarkProp
     <svg
       viewBox="0 0 100 82"
       role="img"
-      aria-label="Kano"
+      aria-label="Entangular"
       className={cn('size-8', className)}
       {...props}
     >
@@ -56,7 +56,7 @@ export function Logo({
             tone === 'inverted' ? 'text-background' : 'text-foreground',
           )}
         >
-          kano
+          entangular
         </span>
       ) : null}
     </span>

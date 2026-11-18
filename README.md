@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# 🌟 Advanced MERN B2B Realtime Collaboration Platform - Kano
+# 🌟 Advanced MERN B2B Realtime Collaboration Platform - Entangular
 
 > This code, whether in parts or whole, is licensed for commercial use **only with a license**. It is **free for personal use**.
 > 👉 [Click here to obtain license](https://techwithemma.gumroad.com/l/huytmd) and 👉 [here to learn more](./TECHWITHEMMA-LICENSE.md)
